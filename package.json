@@ -21,7 +21,7 @@
     "url": "https://github.com/sumerliu/ease-d3-contours/issues"
   },
   "homepage": "https://github.com/sumerliu/ease-d3-contours#readme",
-  "dependencies": {
+  "devDependencies": {
     "@types/d3": "^5.7.2",
     "@types/node": "^13.9.0",
     "clean-webpack-plugin": "^3.0.0",

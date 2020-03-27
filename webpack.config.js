@@ -22,6 +22,9 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js'
     },
+    externals: {
+        d3: 'd3'
+    },
     module: {
         rules: [
             {
@@ -46,6 +49,8 @@ module.exports = {
             }
         ],
     },
-    plugins: [new CleanWebpackPlugin({cleanOptions})],
+    plugins: [
+        new CleanWebpackPlugin({cleanOptions})
+    ],
 
 }
