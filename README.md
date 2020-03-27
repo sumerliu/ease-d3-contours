@@ -68,7 +68,7 @@
 [![Product Name Screen Shot][product-screenshot]](https://github.com/sumerliu/ease-d3-contours/blob/master/example/example.html)
 
 > 基于d3-contours官方示例封装可配置的contours<br>
-> version:  0.0.01<br>
+> version:  0.0.1<br>
 > lastDate: 2020/3/26<br>
 > Author:  Sumer Liu<br>
 
