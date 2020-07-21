@@ -17,10 +17,13 @@ module.exports = {
     },
     devtool: 'source-map',// 打包出的js文件是否生成map文件（方便浏览器调试）
     mode: 'production',
-    entry: './src/index.ts',
+    entry: {
+        'index': path.resolve(__dirname, './src/index.ts'),
+        'counters': path.resolve(__dirname, './src/counters.ts')
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js'
+        filename: '[name].bundle.js'
     },
     externals: {
         d3: 'd3'
@@ -28,7 +31,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: require.resolve('./src/index.ts'),
+                test: require.resolve('./src/counters.ts'),
                 use: [{
                   loader: 'expose-loader',
                   options: 'EaseD3Contours'
